@@ -18,19 +18,19 @@ body {
 
 input {
     width: 100vw;
-    height : 8vh;
+    height : 12vh;
     text-align: right;
     border : none;
     outline : none;
     color : white;
     background-color: #444;
     padding : 1.5rem;
-    font-size : 3rem;
+    font-size : 4rem;
 }
 
 .buttons {
     width : 100vw;
-    height : 87vh;
+    height : 83vh;
 
     display : grid;
     grid-template-columns: repeat(4, 1fr);
