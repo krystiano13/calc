@@ -1,0 +1,38 @@
+*,*::before,*::after {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+body {
+    width : 100vw;
+    height : 100vh;
+    overflow: hidden;
+}
+
+.taskbar {
+    width : 100vw;
+    height : 5vh;
+    background-color: #444;
+}
+
+input {
+    width: 100vw;
+    height : 8vh;
+    text-align: right;
+    border : none;
+    outline : none;
+    color : white;
+    background-color: #444;
+    padding : 1.5rem;
+    font-size : 3rem;
+}
+
+.buttons {
+    width : 100vw;
+    height : 87vh;
+
+    display : grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5,1fr);
+}
