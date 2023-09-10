@@ -9,6 +9,7 @@ let numberID = 0;
 buttons.forEach((item) => {
   item.addEventListener("click", (e) => {
     if (!e.target.id) {
+      if (e.target.innerText === "." && numbers[numberID].length <= 0) return;
       numbers[numberID].push(e.target.innerText);
       input.value = numbers[numberID].join("");
     } else {
