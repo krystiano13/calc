@@ -32,6 +32,15 @@ buttons.forEach((item) => {
         input.value = numbers[numberID].join("");
       }
 
+      if (e.target.id === "ce") {
+        numbers = [[], []];
+        numberID = 0;
+      }
+
+      if (e.target.id === "c" && numbers[numberID].length > 0) {
+        numbers[numberID].pop();
+      }
+
       if (e.target.id === "=") {
         if (numbers[0].length > 0 && numbers[1].length > 0) {
           switch (operator) {
@@ -59,6 +68,10 @@ buttons.forEach((item) => {
           input.value = numbers[numberID].join("");
         }
       }
+    }
+
+    if (numbers[numberID].length === 0) {
+      input.value = "0";
     }
 
     console.log(numbers);
