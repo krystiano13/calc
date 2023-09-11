@@ -12,7 +12,6 @@ const addInput = (e) => {
   input.value = numbers[numberID].join("");
 };
 
-
 const checkOperator = (e) => {
   switch (e.target.id) {
     case "+":
