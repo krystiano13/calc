@@ -6,3 +6,6 @@
     <li>CSS</li>
     <li>JS</li>
 </ul>
+
+<h2>Project Setup :</h2>
+<h3>Just open index.html in your browser</h3>
